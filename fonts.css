@@ -13,3 +13,8 @@
     font-family: sportr;
     src: url(resources/fonts/Sportrop.otf) format("opentype");
 }
+
+@font-face {
+    font-family: vollkorn;
+    src: url(resources/fonts/Vollkorn-Regular.ttf);
+}
