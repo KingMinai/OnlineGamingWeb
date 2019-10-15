@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: conerstone;
+    src: url(resources/fonts/Cornerstone.ttf);
+}
+
+@font-face {
+    font-family: neuropol;
+    src: url(resources/fonts/neuropolitical.ttf);
+}
+
+@font-face {
+    font-family: sportr;
+    src: url(resources/fonts/Sportrop.otf) format("opentype");
+}

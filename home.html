@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+  <head>    
+    <title>The Game Journal</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <!-- Main banner ------------------------------------------------>
+    <div class="banner">
+      <div class="banner-text">
+	<h1>The Game Journal</h1>
+      </div>
+    </div>
+    
+    <!-- Header Ribbon ---------------------------------------------->
+    <div class="header" id="mainheader">
+      <a class="hbutton" href="">Home</a>
+      <a class="hbutton" href="">Page 2</a>
+      <a class="hbutton" href="">Page 3</a>
+    </div>
+    
+    <!-- Content ---------------------------------------------------->
+   <div class="content">
+     <p>
+             An online game is a video game that is played through the Internet or any other computer network available. Online games are ubiquitous on modern gaming platforms, and span many genres, including first-person shooters, strategy games and massively multiplayer online role-playing games.
+      <br/>
+      The main diffirences between “normal” (Offline games) are that offline games made to be played locally on a single console/computer without requiring an internet connection. These games usually have a very straightforward path and a clear conclution. 
+     <p>
+   </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("mainheader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+   
+  </body>
+
+</html>
+
+<!--=EOF===========================================================-->
