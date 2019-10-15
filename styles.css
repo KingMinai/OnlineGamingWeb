@@ -5,7 +5,7 @@
 /*-- Banner backgroung --*/
 .banner {
     background-image: url(resources/images/mainbg.jpg);
-    min-height: 1400px;
+    min-height: 1000px;
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -102,35 +102,33 @@ h1:hover {
 
 .card {
     background-color: white;
+    border-radius: 0px 25px 25px 0px;
     position: left;
     width: 50%;
+    height: 210px;
     padding: 10px 20px 10px 20px;
     margin: 50px 0px 50px 0px;
 }
 
 .card-image {
     display: inline-block;
-    vertical-align: top;
-    width: 10%;
+    align: top left;
+    height: 230px;
     float: left;
+    margin: -10px 15px 0px -18px;
  }
  
 .card-text {
     display: inline-block;
-    width: 46%;
-    float: right;
+    width: 72%;
     position: relative;
+    font-family: vollkorn;
+    font-size: 20px;
  }
 
-/*.card-text{
-  float: left;
-}
-
-.thumbnail {
-    width: 300px;
-    height: 330px;
-    margin: 50px 0px 50px 0px;
-    float: right;
+h2 {
+    font-family: conerstone;
+    font-weight: 20;
 }
 
 /*==EOF===============================================================*/
