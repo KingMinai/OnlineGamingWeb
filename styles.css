@@ -30,6 +30,7 @@ h1 {
     font-weight: 500;
     font-size: 150px;
     color: white;
+    transition: text-shadow 0.5s ease-in-out;
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
 
@@ -51,6 +52,7 @@ h1:hover {
     margin: 0px -10px 0px -10px;
     padding: 0px 3px 0px 3px;
     align-content: center;
+    z-index: 5;
 }
 
 /*-- Buttons --*/
@@ -100,7 +102,7 @@ h1:hover {
     font-family: vollkorn;
 }
 
-.card {
+.card-left {
     background-color: white;
     border-radius: 0px 25px 25px 0px;
     position: left;
@@ -108,27 +110,47 @@ h1:hover {
     height: 210px;
     padding: 10px 20px 10px 20px;
     margin: 50px 0px 50px 0px;
+    filter: drop-shadow(8px 8px 10px black);
 }
 
-.card-image {
+.card-left-image {
     display: inline-block;
     align: top left;
     height: 230px;
     float: left;
     margin: -10px 15px 0px -18px;
+    transition: filter 0.5s ease-in-out;
+    filter: brightness(100%);
  }
- 
-.card-text {
+
+.card-image:hover {
+    display: inline-block;
+    align: top left;
+    height: 230px;
+    float: left;
+    margin: -10px 15px 0px -18px;
+    filter: brightness(50%);
+ }
+
+.card-left-text {
     display: inline-block;
     width: 72%;
     position: relative;
     font-family: vollkorn;
     font-size: 20px;
+    color: black;
+    z-index: 1;
  }
 
 h2 {
     font-family: conerstone;
     font-weight: 20;
+}
+
+.card-right {
+    float: right;
+    position: relative;
+    margin: -280px 0px 0px 0px;
 }
 
 /*==EOF===============================================================*/
