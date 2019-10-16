@@ -106,7 +106,7 @@ h1:hover {
     background-color: white;
     border-radius: 0px 25px 25px 0px;
     position: left;
-    width: 50%;
+    width: 60%;
     height: 210px;
     padding: 10px 20px 10px 20px;
     margin: 50px 0px 50px 0px;
@@ -151,6 +151,10 @@ h2 {
     float: right;
     position: relative;
     margin: -280px 0px 0px 0px;
+    height: 510px;
+    border-radius: 25px 0px 0px 25px;
 }
+
+
 
 /*==EOF===============================================================*/
