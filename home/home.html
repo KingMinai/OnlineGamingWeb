@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
 
-  <head>    
+  <head>
     <title>The Game Journal</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/gc.png" type="image/png"/>
+    <link rel="stylesheet" href="styles.css"/><!-- get css sheet -->
+    
   </head>
   
   <body>
     <!-- Main banner ------------------------------------------------>
     <div class="banner">
       <div class="banner-text">
-	<a style="text-decoration: none;" href=""><h1>The Game Journal</h1></a>
+	<a style="text-decoration: none;" href="home.html">
+	  <h1>The Game Journal</h1>
+	</a>
       </div>
-    </div>
+    </div><!--END banner-->
     
     <!-- Header Ribbon ---------------------------------------------->
-    <div class="header" id="mainheader">
-      <a class="hbutton" href="">Home</a>
-      <a class="hbutton" href="">Page 2</a>
-      <a class="hbutton" href="">Page 3</a>
-    </div>
+    <div class="header" id="mainheader"><!--id for javascript-->
+      <a class="hbutton" href="home.html">Home</a>
+      <a class="hbutton" href="https://forms.gle/xAqJ3tkxe9NG73TaA">Survey</a>
+      <a class="hbutton" href="">Results</a>
+      <a class="hbutton" id="contact" href="">Contact</a>
+    </div><!--END header-->
     
     <!-- Content ---------------------------------------------------->
     <div class="content"><!--BEGIN content-->
       
-      <!-- Card 1: What is an online game? -->
-      <div class="card-left">
-	<img class="card-left-image" src="resources/images/example.jpg">
+      <div class="card-left"><!-- Card 1: What is an online game? -->
+	<img class="card-left-image" src="images/example.jpg">
 	<div class="card-left-text">
 	  <h2>What is an Online game?</h2>
 	  <p> An online game is a video game that is played through the Internet or any
@@ -36,15 +40,14 @@
 	</div>
       </div><!--END card 1-->
 
-      <div class="card-right" style="margin-top: -280px;">
-	<img class="card-right-img" src="resources/images/example.jpg">
+      <div class="card-right" style="margin-top: -280px;"><!-- External 1: -->
+	<img class="card-right-img" src="images/example.jpg">
 	<h2 class="external"><b><i>SEE ALSO</i></b></h2>
-	<p class="external-title">TIKE </p>
-      </div>
+	<p class="external-title">TIKE</p>
+      </div><!--END external 1-->
       
-      <!-- Card 1: What is an online game? -->	
-      <div class="card-left">
-	<img class="card-left-image" src="resources/images/example.jpg">
+      <div class="card-left"><!-- Card 2: What is an online game? -->
+	<img class="card-left-image" src="images/example.jpg">
 	<div class="card-left-text">
 	  <h2>What is an Online game?</h2>
 	  <p> An online game is a video game that is played through the Internet or any
@@ -52,17 +55,16 @@
 	    platforms, and span many genres, including first-person shooters, strategy
 	    games and massively multiplayer online role-playing games. </p>
 	</div>
-      </div>
+      </div><!--END card 2-->
       
-      <div class="card-right" style="margin-top: 0px;">
-	<img class="card-right-img" src="resources/images/example.jpg">
+      <div class="card-right" style="margin-top: 0px;"><!-- External 2: -->
+	<img class="card-right-img" src="images/example.jpg">
 	<h2 class="external"><b><i>SEE ALSO</i></b></h2>
-	<p class="external-title">TIKE </p>
-      </div>
+	<p class="external-title">TIKE</p>
+      </div><!--END external 2-->
       
-      <!-- Card 1: What is an online game? -->
-      <div class="card-left">
-	<img class="card-left-image" src="resources/images/example.jpg">
+      <div class="card-left"><!-- Card 3: What is an online game? -->
+	<img class="card-left-image" src="images/example.jpg">
 	<div class="card-left-text">
 	  <h2>What is an Online game?</h2>
 	  <p> An online game is a video game that is played through the Internet or any
@@ -70,11 +72,10 @@
 	    platforms, and span many genres, including first-person shooters, strategy
 	    games and massively multiplayer online role-playing games. </p>
 	</div>
-      </div>
+      </div><!--END card 3-->
       
-     <!-- Card 1: What is an online game? --> 
-     <div class="card-left">
-	<img class="card-left-image" src="resources/images/example.jpg">
+     <div class="card-left"><!-- Card 4: What is an online game? --> 
+	<img class="card-left-image" src="images/example.jpg">
 	<div class="card-left-text">
 	  <h2>What is an Online game?</h2>
 	  <p> An online game is a video game that is played through the Internet or any
@@ -82,32 +83,43 @@
 	    platforms, and span many genres, including first-person shooters, strategy
 	    games and massively multiplayer online role-playing games. </p>
 	</div>
-      </div>
+      </div><!--END card 4-->
 
     </div><!--End of content-->
 
     
     <!-- Footer ----------------------------------------------------->
-    <div class="footer">
-      
-    </div>
+    <div class="footer"><!--BEGIN footer-->
+      <div class="author">Zainab Minai</div>
+      <div class="title">
+	<img class="logo" src="images/gc.png">
+	The Game Journal
+      </div>
+
+      <hr color="white" size="1" noshade />
+
+     <a href="">
+      <div class="pat-info">Grade 11 - CAT Practical 2019</div>
+     </a>
+     
+    </div><!--END footer-->
 
     
-<!-- Javascript for header ------------------------------------------>
+<!-- Javascript for sticky header ------------------------------------------>
 <script>
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {stickyhead()}; // define new function
 
-var header = document.getElementById("mainheader");
-var sticky = header.offsetTop;
+var header = document.getElementById("mainheader"); // call header from id
+var sticky = header.offsetTop; // keep header ontop 
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
+function stickyhead() { // function to make sticky if user scrolled passed header
+  if (window.pageYOffset > sticky) { 
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
   }
 }
-</script>
+</script><!--END javascript-->
    
   </body>
 

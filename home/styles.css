@@ -1,17 +1,18 @@
 /*-- Get fonts --*/
-@import "fonts.css";
+@import "../fonts.css";
 
 /*-- Main banner -----------------------------------------------------*/
 /*-- Banner backgroung --*/
 .banner {
-    background-image: url(resources/images/mainbg.jpg);
+    background-image: url("images/mainbg.jpg");
     min-height: 1000px;
+    width: cover;
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin: -20px -20px 0px -20px ;
+    margin: -20px 0px 0px -20px;
 }
 
 /*-- Banner text possitioning --*/
@@ -49,7 +50,7 @@ h1:hover {
     background-color: black;    
     width: cover;
     height: 70px;
-    margin: 0px -10px 0px -10px;
+    margin: 0px 0px 0px -10px;
     padding: 0px 3px 0px 3px;
     align-content: center;
     z-index: 5;
@@ -82,6 +83,10 @@ h1:hover {
   cursor: pointer;
 }
 
+#contact {
+    margin-left: 1147px;
+}
+
 /*-- Ribbon sticks to top --*/
 .sticky {
   position: fixed;
@@ -92,16 +97,19 @@ h1:hover {
 /*-- Content ---------------------------------------------------------*/
 /*-- Content background --*/
 .content {
-    background-image: url("resources/images/contbg.jpg");
+    background-image: url("images/contbg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 120%;
-    margin: 0px -10px 0px -10px;
+    margin: 0px 0px 0px -10px;
     padding: 50px 0px 50px 0px;
     font-family: vollkorn;
+    width: cover;
 }
 
+/*-- Left cards --*/
+/*- Box -*/
 .card-left {
     background-color: white;
     border-radius: 0px 25px 25px 0px;
@@ -113,6 +121,7 @@ h1:hover {
     filter: drop-shadow(8px 8px 10px black);
 }
 
+/*- Image -*/
 .card-left-image {
     display: inline-block;
     align: top left;
@@ -130,8 +139,15 @@ h1:hover {
     float: left;
     margin: -10px 15px 0px -18px;
     filter: brightness(50%);
- }
+}
 
+/*- Title -*/
+h2 {
+    font-family: conerstone;
+    font-weight: 20;
+}
+
+/*- Text body-*/
 .card-left-text {
     display: inline-block;
     width: 72%;
@@ -142,11 +158,8 @@ h1:hover {
     z-index: 1;
  }
 
-h2 {
-    font-family: conerstone;
-    font-weight: 20;
-}
-
+/*-- Right cards (external websites) --*/
+/*- Box -*/
 .card-right {
     float: right;
     position: relative;
@@ -156,6 +169,7 @@ h2 {
     color: white;
 }
 
+/*- Image -*/
 .card-right-img {
     float: right;
     position: relative;
@@ -164,7 +178,7 @@ h2 {
     text-align: center;
     color: white;
     transition: filter 0.3s ease-in-out;
-    filter: blur(0px) brightness(100%);
+    filter: blur(0px) brightness(100%) drop-shadow(8px 8px 10px black);
 }
 
 .card-right-img:hover {
@@ -174,9 +188,11 @@ h2 {
     border-radius: 25px 0px 0px 25px;
     text-align: center;
     color: white;
-    filter: blur(5px) brightness(120%);
+    filter: blur(5px) brightness(120%) drop-shadow(8px 8px 10px black);
+    
 }
 
+/*- See Also text -*/
 .external {
   font-family: vollkorn;
   font-size: 20px;  
@@ -185,6 +201,7 @@ h2 {
   left: 45%;
 }
 
+/*- Title of external website -*/
 .external-title {
   font-family: conerstone;
   font-size: 32px;  
@@ -193,6 +210,50 @@ h2 {
   left: 45%;
 }
 
+/*-- Footer ----------------------------------------------------------*/
 
+.footer {
+    background-color: black;
+    height: 100px;
+    width: cover;
+    position: left;
+    margin-left: -10px;
+}
+
+.author {
+    color: white;
+    font-family: conerstone;
+    font-size: 16px;
+    font-weight: 20;
+    text-align: left;
+    position: relative;
+    top: 22px;
+    left: 20px;
+}
+
+.title {
+    color: white;
+    font-family: conerstone;
+    font-size: 16px;
+    font-weight: 20;
+    text-align: right;
+    position: relative;
+    top: -7px;
+    right: 20px;
+}
+
+.logo {
+    vertical-align: baseline;
+    height: 25px;
+}
+
+.pat-info {
+    color: white;
+    font-family: conerstone;
+    font-size: 16px;
+    font-weight: 20;
+    text-align: center;
+    text-decoration: underline;
+}
 
 /*==EOF===============================================================*/
