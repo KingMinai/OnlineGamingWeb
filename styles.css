@@ -96,7 +96,7 @@ h1:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    min-height: 120%;
     margin: 0px -10px 0px -10px;
     padding: 50px 0px 50px 0px;
     font-family: vollkorn;
@@ -123,7 +123,7 @@ h1:hover {
     filter: brightness(100%);
  }
 
-.card-image:hover {
+.card-left-image:hover {
     display: inline-block;
     align: top left;
     height: 230px;
@@ -150,9 +150,47 @@ h2 {
 .card-right {
     float: right;
     position: relative;
-    margin: -280px 0px 0px 0px;
     height: 510px;
     border-radius: 25px 0px 0px 25px;
+    text-align: center;
+    color: white;
+}
+
+.card-right-img {
+    float: right;
+    position: relative;
+    height: 510px;
+    border-radius: 25px 0px 0px 25px;
+    text-align: center;
+    color: white;
+    transition: filter 0.3s ease-in-out;
+    filter: blur(0px) brightness(100%);
+}
+
+.card-right-img:hover {
+    float: right;
+    position: relative;
+    height: 510px;
+    border-radius: 25px 0px 0px 25px;
+    text-align: center;
+    color: white;
+    filter: blur(5px) brightness(120%);
+}
+
+.external {
+  font-family: vollkorn;
+  font-size: 20px;  
+  position: absolute;
+  top: 2px;
+  left: 45%;
+}
+
+.external-title {
+  font-family: conerstone;
+  font-size: 32px;  
+  position: absolute;
+  bottom: 1px;
+  left: 45%;
 }
 
 
