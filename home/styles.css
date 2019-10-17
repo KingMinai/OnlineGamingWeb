@@ -145,6 +145,7 @@ h1:hover {
 h2 {
     font-family: conerstone;
     font-weight: 20;
+    color: black;
 }
 
 /*- Text body-*/
@@ -199,6 +200,7 @@ h2 {
   position: absolute;
   top: 2px;
   left: 45%;
+  color: white;
 }
 
 /*- Title of external website -*/
