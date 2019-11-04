@@ -5,7 +5,7 @@
 /*-- Banner backgroung --*/
 .banner {
     background-image: url("images/mainbg.jpg");
-    min-height: 1000px;
+    min-height: 250px;
     width: cover;
     background-attachment: fixed;
     background-position: top center;
@@ -29,7 +29,7 @@ h1 {
     cursor: pointer;
     font-family: sportr;
     font-weight: 500;
-    font-size: 150px;
+    font-size: 96px;
     color: white;
     transition: text-shadow 0.5s ease-in-out;
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
@@ -39,7 +39,7 @@ h1:hover {
     cursor: pointer;
     font-family: sportr;
     font-weight: 500;
-    font-size: 150px;
+    font-size: 96px;
     color: white;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
 }
@@ -101,38 +101,35 @@ h1:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 120%;
+    min-height: 650px;
     margin: 0px 0px 0px -10px;
-    padding: 50px 0px 50px 0px;
     font-family: vollkorn;
     width: cover;
 }
 
 /*-- Left cards --*/
 /*- Box -*/
-.card-left {
+.card {
     background-color: white;
-    border-radius: 0px 25px 25px 0px;
-    position: left;
+    position: relative;
+    left: 20%;
     width: 60%;
-    height: 210px;
-    padding: 10px 20px 10px 20px;
-    margin: 50px 0px 50px 0px;
+    height: 650px;
+    padding: 10px 70px;
     filter: drop-shadow(8px 8px 10px black);
 }
 
 /*- Image -*/
-.card-left-image {
+.card-image {
     display: inline-block;
     align: top left;
-    height: 230px;
-    float: left;
-    margin: -10px 15px 0px -18px;
+    width: 1279px;
+    margin: 0px -70px;
     transition: filter 0.5s ease-in-out;
     filter: brightness(100%);
  }
 
-.card-left-image:hover {
+/*.card-image:hover {
     display: inline-block;
     align: top left;
     height: 230px;
@@ -145,13 +142,15 @@ h1:hover {
 h2 {
     font-family: conerstone;
     font-weight: 20;
-    color: black;
+    text-align: center;
+    font-size: 60px;
+    margin: 0px;
 }
 
 /*- Text body-*/
-.card-left-text {
+.card-text {
     display: inline-block;
-    width: 72%;
+    width: 100%;
     position: relative;
     font-family: vollkorn;
     font-size: 20px;
@@ -179,7 +178,7 @@ h2 {
     text-align: center;
     color: white;
     transition: filter 0.3s ease-in-out;
-    filter: blur(0px) brightness(60%) drop-shadow(8px 8px 10px black);
+    filter: blur(0px) brightness(100%) drop-shadow(8px 8px 10px black);
 }
 
 .card-right-img:hover {
@@ -189,7 +188,7 @@ h2 {
     border-radius: 25px 0px 0px 25px;
     text-align: center;
     color: white;
-    filter: blur(5px) brightness(100%) drop-shadow(8px 8px 10px black);
+    filter: blur(5px) brightness(120%) drop-shadow(8px 8px 10px black);
     
 }
 
@@ -200,8 +199,6 @@ h2 {
   position: absolute;
   top: 2px;
   left: 45%;
-  color: white;
-  text-decoration: none;
 }
 
 /*- Title of external website -*/
@@ -210,7 +207,7 @@ h2 {
   font-size: 32px;  
   position: absolute;
   bottom: 1px;
-  left: 10%;
+  left: 45%;
 }
 
 /*-- Footer ----------------------------------------------------------*/

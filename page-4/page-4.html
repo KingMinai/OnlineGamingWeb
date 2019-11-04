@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>The Game Journal</title>
+    <link rel="shortcut icon" href="images/gc.png" type="image/png"/>
+    <link rel="stylesheet" href="styles-4.css"/><!-- get css sheet -->
+    
+  </head>
+  
+  <body>
+    <!-- Main banner ------------------------------------------------>
+    <div class="banner">
+      <div class="banner-text">
+	<a style="text-decoration: none;" href="home.html">
+	  <h1>The Game Journal</h1>
+	</a>
+      </div>
+    </div><!--END banner-->
+    
+    <!-- Header Ribbon ---------------------------------------------->
+    <div class="header" id="mainheader"><!--id for javascript-->
+      <a class="hbutton" href="../home/home.html">Home</a>
+      <a class="hbutton" href="https://forms.gle/xAqJ3tkxe9NG73TaA">Survey</a>
+      <a class="hbutton" href="../page-4/page-4.html">Results</a>
+      <a class="hbutton" id="contact" href="../page-5/page-5.html">Contact</a>
+    </div><!--END header-->
+    
+    <!-- Content ---------------------------------------------------->
+    <div class="content"><!--BEGIN content-->
+      
+      <div class="card"><!-- Card 1: What is an online game? -->
+	<div class="card-text">
+	  <h2>Survey Results</h2>
+	  <img class="card-image" src="images/res.jpg">
+	  <p>
+	    I have conducted a survey in order to get unbiased information to help us better understand the reach of
+	    online gaming and the level of toxicity souring and within it. I surveyed 20 people electronically using
+	    google forms. You can take the survey by clicking <a href="https://forms.gle/xAqJ3tkxe9NG73TaA">here</a>
+	    or by clicking the survey option in the ribbon. The results of the survey are as follows:
+	  </p>
+
+	  <h3>How old are you?</h3>
+	  <img class="result-img" src="images/result-graphs/age.png">
+
+	  <h3>What is your gender</h3>
+	  <img class="result-img" src="images/result-graphs/gender.png">
+
+	  <h3>Do you know what's online gaming?</h3>
+	  <img class="result-img" src="images/result-graphs/know.png">
+
+	  <h3>Have you ever played an online game?</h3>
+	  <img class="result-img" src="images/result-graphs/played.png">
+
+	  <h3>On what platform do you play online games?</h3>
+	  <img class="result-img" src="images/result-graphs/platform.png">
+
+	  <h3>How many hours a week do you play online games?</h3>
+	  <img class="result-img" src="images/result-graphs/hours.png">
+
+	  <h3>What type of online games do you play?</h3>
+	  <img class="result-img" src="images/result-graphs/type.png">
+
+	  <h3>How many people do you know that play online games?</h3>
+	  <img class="result-img" src="images/result-graphs/people.png">
+
+	  <h3>Do you think online gaming is more positive or negative?</h3>
+	  <img class="result-img" src="images/result-graphs/view.png">
+
+	  <h3>Have you ever experienced toxic behavior online?</h3>
+	  <img class="result-img" src="images/result-graphs/toxicexp.png">
+
+	  <h3>Have you ever acted toxic online?</h3>
+	  <img class="result-img" src="images/result-graphs/toxicself.png">
+
+	  <h3>
+	  
+	</div>
+      </div><!--END card 1-->
+     
+    </div><!--End of content-->
+
+    
+    <!-- Footer ----------------------------------------------------->
+    <div class="footer"><!--BEGIN footer-->
+      <div class="author">Zainab Minai</div>
+      <div class="title">
+	<img class="logo" src="images/gc.png">
+	The Game Journal
+      </div>
+
+      <hr color="white" size="1" noshade />
+
+     <a href="../page-5/page-5.html">
+      <div class="pat-info">Grade 11 - CAT Practical 2019</div>
+     </a>
+     
+    </div><!--END footer-->
+
+    
+<!-- Javascript for sticky header ------------------------------------------>
+<script>
+window.onscroll = function() {stickyhead()}; // define new function
+
+var header = document.getElementById("mainheader"); // call header from id
+var sticky = header.offsetTop; // keep header ontop 
+
+function stickyhead() { // function to make sticky if user scrolled passed header
+  if (window.pageYOffset > sticky) { 
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script><!--END javascript-->
+   
+  </body>
+
+</html>
+
+<!--=EOF===========================================================-->

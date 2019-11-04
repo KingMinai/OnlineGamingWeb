@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>The Game Journal</title>
+    <link rel="shortcut icon" href="images/gc.png" type="image/png"/>
+    <link rel="stylesheet" href="styles-5.css"/><!-- get css sheet -->
+    
+  </head>
+  
+  <body>
+    <!-- Main banner ------------------------------------------------>
+    <div class="banner">
+      <div class="banner-text">
+	<a style="text-decoration: none;" href="home.html">
+	  <h1>The Game Journal</h1>
+	</a>
+      </div>
+    </div><!--END banner-->
+    
+    <!-- Header Ribbon ---------------------------------------------->
+    <div class="header" id="mainheader"><!--id for javascript-->
+      <a class="hbutton" href="../home/home.html">Home</a>
+      <a class="hbutton" href="https://forms.gle/xAqJ3tkxe9NG73TaA">Survey</a>
+      <a class="hbutton" href="../page-4/page-4.html">Results</a>
+      <a class="hbutton" id="contact" href="../page-5/page-5.html">Contact</a>
+    </div><!--END header-->
+    
+    <!-- Content ---------------------------------------------------->
+    <div class="content"><!--BEGIN content-->
+      
+      <div class="card"><!-- Card 1: What is an online game? -->
+	<div class="card-text">
+	  <br/>
+	  <h2>Zainab Minai</h2>
+	  <br/><br/>
+	  <h2>Grade 11 - CAT PRACTICAL 2019</h2>
+	  <br/>
+	  <h2>Topic: Online Gaming</h2>
+	  <br/><br/><br/>
+	  <p align="center"> Made with love, blood, sweat and tears. Thank you! :P </p>
+
+	</div>
+      </div><!--END card 1-->
+     
+    </div><!--End of content-->
+
+    
+    <!-- Footer ----------------------------------------------------->
+    <div class="footer"><!--BEGIN footer-->
+      <div class="author">Zainab Minai</div>
+      <div class="title">
+	<img class="logo" src="images/gc.png">
+	The Game Journal
+      </div>
+
+      <hr color="white" size="1" noshade />
+
+     <a href="../page-5/page-5.html">
+      <div class="pat-info">Grade 11 - CAT Practical 2019</div>
+     </a>
+     
+    </div><!--END footer-->
+
+    
+<!-- Javascript for sticky header ------------------------------------------>
+<script>
+window.onscroll = function() {stickyhead()}; // define new function
+
+var header = document.getElementById("mainheader"); // call header from id
+var sticky = header.offsetTop; // keep header ontop 
+
+function stickyhead() { // function to make sticky if user scrolled passed header
+  if (window.pageYOffset > sticky) { 
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script><!--END javascript-->
+   
+  </body>
+
+</html>
+
+<!--=EOF===========================================================-->
